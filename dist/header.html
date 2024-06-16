@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XL1vWZOJyj7Yy7tcenmpD1ypASozpmT/E0¡PtmFIB46ZmdtAc9eNBvH0H/ZpiBw="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex justify-between items-center px-8">
+                <a href="https://flowbite.com" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                    <span class="text-xl font-semibold whitespace-nowrap dark:text-white">Bank Name</span>
+                </a>
+
+                <form action="#" class="ml-8">
+                    <input type="search" name="search" id="search"
+                        class="bg-gray-50 w-60 sm:w-80 border border-gray-300 text-gray-900 rounded-full px-6 py-2.5 focus:ring-primary-600 focus:border-primary-600 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search..." required>
+                </form>
+
+                <div class="flex items-center lg:order-2 ml-8">
+                    <i class="fas fa-bell text-white cursor-pointer"></i>
+                    <div class="hs-dropdown relative inline-flex">
+                        <button id="hs-dropdown-with-dividers" type="button"
+                            class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                            My Profile
+                            <svg class="hs-dropdown-open:rotate-180 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <div class="hs-dropdown-menu transition-opacity duration-200 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 mt-2 divide-y divide-gray-200 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700"
+                            aria-labelledby="hs-dropdown-with-dividers">
+                            <div class="py-2">
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Newsletter
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Purchases
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Downloads
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Team Account
+                                </a>
+                            </div>
+                            <div class="py-2">
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Upgrade License
+                                </a>
+                            </div>
+                            <div class="py-2">
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Account Settings
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Sign out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div
+        class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+        <div class="mb-2 p-4">
+            <h5 class="font-sans text-xl font-semibold leading-snug text-gray-900">Main Menu</h5>
+        </div>
+        <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-gray-700">
+            <div role="button" tabindex="0"
+                class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-gray-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        class="h-5 w-5">
+                        <path fill-rule="evenodd"
+                            d="M2.25 2.25a.75.75 0 000 1.5H3v10.5a3 3 0 003 3h1.21l-1.172 3.513a.75.75 0 001.424.474l.329-.987h8.418l.33.987a.75.75 0 001.422-.474l-1.17-3.513H18a3 3 0 003-3V3.75h.75a.75.75 0 000-1.5H2.25zm6.04 16.5l.5-1.5h6.42l.5 1.5H8.29zm7.46-12a.75.75 0 00-1.5 0v6a.75.75 0 001.5 0v-6zm-3 2.25a.75.75 0 00-1.5 0v3.75a.75.75 0 001.5 0V9zm-3 2.25a.75.75 0 00-1.5 0v1.5a.75.75 0 001.5 0v-1.5z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                Blocks
+            </div>
+            <div role="button" tabindex="0"
+                class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-blue-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        class="h-5 w-5">
+                        <path
+                            d="M7.586 8.586a2 2 0 112.828 2.828L6.828 15H9a1 1 0 001-1v-1h.172l3 3H8a1 1 0 01-1-1V9a1 1 0 011-1h5a1 1 0 011 1v5h-1a1 1 0 01-1-1v-1h-3.172l-3-3z" />
+                        <path
+                            d="M15.992 5.006A.75.75 0 0116.751 6h4.495a.75.75 0 010 1.5h-3.693l2.632 2.75h.001a1.75 1.75 0 11-2.476 2.476l-3.007-3.138-1.77 1.653a1.75 1.75 0 11-2.581-2.371l1.949-1.815h-3.466a.75.75 0 110-1.5h4.495a.75.75 0 01.759.006zM14.5 15.64l-3.066-3.2.973-.906 3.065 3.2-.972.906zm-2.537-5.288l2.277 2.375-1.364 1.271-2.277-2.375 1.364-1.27 1.364 1.27zm-1.704-.716a.25.25 0 00-.366-.336l-3.35 3.125a.25.25 0 00-.064.11.25.25 0 00.064.224l3.35 3.126a.25.25 0 00.43-.168v-6.25z" />
+                    </svg>
+                </div>
+                Transactions
+            </div>
+            <div role="button" tabindex="0"
+                class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-blue-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        class="h-5 w-5">
+                        <path
+                            d="M3 2a1 1 0 00-1 1v2a1 1 0 001 1h1v4.38l-.527-.526a.75.75 0 111.06-1.06l1.94 1.94h.637l1.94-1.94a.75.75 0 111.06 1.06L8 8.44V13h8v-4.56l-2.56-2.56a.75.75 0 111.06-1.06l1.94 1.94h.637l1.94-1.94a.75.75 0 111.06 1.06L20 10.38V14h1a1 1 0 001-1V3a1 1 0 00-1-1H3zm4 5.44l2.56 2.56a.75.75 0 01-1.06 1.06l-1.44-1.44V15H5V9.44zM19 15h-8v-4.56l2.56 2.56a.75.75 0 001.06-1.06L12 8.44V5h7v10z" />
+                    </svg>
+                </div>
+                Cards
+            </div>
+            <div role="button" tabindex="0"
+                class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-blue-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        class="h-5 w-5">
+                        <path
+                            d="M18.5 6.25h-13a1.25 1.25 0 00-1.25 1.25v9.5A1.25 1.25 0 005.5 18.5h13a1.25 1.25 0 001.25-1.25v-9.5a1.25 1.25 0 00-1.25-1.25zm-13-.75a2.25 2.25 0 012.25-2.25h13a2.25 2.25 0 012.25 2.25v9.5a2.25 2.25 0 01-2.25 2.25h-13a2.25 2.25 0 01-2.25-2.25v-9.5z" />
+                        <path
+                            d="M15 8.25a.75.75 0 01-.75.75h-4.5a.75.75 0 110-1.5h4.5a.75.75 0 01.75.75zM12 11a.75.75 0 00-.75.75v1.5a.75.75 0 001.5 0v-1.5A.75.75 0 0012 11z" />
+                    </svg>
+                </div>
+                Loans
+            </div>
+            <div role="button" tabindex="0"
+                class="flex items-center w-full p-3 rounded-lg text-start leading-tight transition-all hover:bg-blue-50 hover:bg-opacity-80 focus:bg-blue-50 focus:bg-opacity-80 active:bg-blue-50 active:bg-opacity-80 hover:text-blue-900 focus:text-blue-900 active:text-blue-900 outline-none">
+                <div class="grid place-items-center mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"
+                        class="h-5 w-5">
+                        <path
+                            d="M18.5 6.25h-13a1.25 1.25 0 00-1.25 1.25v9.5A1.25 1.25 0 005.5 18.5h13a1.25 1.25 0 001.25-1.25v-9.5a1.25 1.25 0 00-1.25-1.25zm-13-.75a2.25 2.25 0 012.25-2.25h13a2.25 2.25 0 012.25 2.25v9.5a2.25 2.25 0 01-2.25 2.25h-13a2.25 2.25 0 01-2.25-2.25v-9.5z" />
+                        <path
+                            d="M15 8.25a.75.75 0 01-.75.75h-4.5a.75.75 0 110-1.5h4.5a.75.75 0 01.75.75zM12 11a.75.75 0 00-.75.75v1.5a.75.75 0 001.5 0v-1.5A.75.75 0 0012 11z" />
+                    </svg>
+                </div>
+                Settings
+            </div>
+        </nav>
+        <div class="mt-auto mb-6">
+            <button type="button"
+                class="flex items-center justify-center w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 text-white font-semibold rounded-lg transition-all shadow-md hover:shadow-lg">
+                Log Out
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
