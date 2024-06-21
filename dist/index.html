@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XL1vWZOJyj7Yy7tcenmpD1ypASozpmT/E0¡PtmFIB46ZmdtAc9eNBvH0H/ZpiBw="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+
+    <style>
+        .hello {
+            margin-top: 66px;
+            padding-top: 25px;
+        }
+
+        .hello-1 {
+            padding-top: 87px;
+            padding-left: 300px;
+        }
+
+        .hello-2 {
+            padding: 20px;
+
+        }
+
+        .hello-3 {
+            color: rgb(180, 83, 9);
+        }
+
+        .hello-4:hover {
+            background-color: rgb(253, 230, 138);
+            color: rgb(120, 53, 15);
+        }
+
+        .hello-5 {
+            padding-bottom: 25px;
+        }
+
+        .hello-6 {
+            width: 600px;
+        }
+
+        .hello-7 {
+            background-color: rgb(209, 250, 229);
+        }
+
+        .hello-8:hover {
+            color: rgb(69, 185, 129);
+        }
+
+        .hello-9 {
+            background-color: rgb(254, 243, 199);
+        }
+
+        .hello-10 {
+            background-color: rgb(237, 233, 254);
+            border-radius: 12px;
+        }
+
+        .hello-11 {
+            justify-content: space-between;
+        }
+
+        .hello-12 {
+            background-image: url("images/curved141.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 12px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body class="relative bg-yellow-50 overflow-hidden max-h-screen">
+
+    <header class="py-2">
+        <nav class="fixed top-0 left-0 right-0 bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+            <div class="flex justify-between items-center px-8">
+                <a href="#" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                    <span class="text-xl font-semibold whitespace-nowrap dark:text-white">Bank Name</span>
+                </a>
+
+                <form action="#" class="ml-8">
+                    <input type="search" name="search" id="search"
+                        class="bg-gray-50 hello-6 sm:w-80 border border-gray-300 text-gray-900 rounded-full px-6 py-2.5 focus:ring-primary-600 focus:border-primary-600 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search..." required>
+                </form>
+
+                <div class="flex items-center lg:order-2 ml-8">
+                    <i class="fas fa-bell text-white cursor-pointer"></i>
+                    <div class="hs-dropdown relative inline-flex">
+                        <button id="hs-dropdown-with-dividers" type="button"
+                            class="hs-dropdown-toggle py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
+                            My Profile
+                            <svg class="hs-dropdown-open:rotate-180 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        <div class="hs-dropdown-menu transition-opacity duration-200 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 mt-2 divide-y divide-gray-200 dark:bg-neutral-800 dark:border dark:border-neutral-700 dark:divide-neutral-700"
+                            aria-labelledby="hs-dropdown-with-dividers">
+                            <div class="py-2">
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Newsletter
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Purchases
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Downloads
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Team Account
+                                </a>
+                            </div>
+                            <div class="py-2">
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Upgrade License
+                                </a>
+                            </div>
+                            <div class="py-2">
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Account Settings
+                                </a>
+                                <a href="#"
+                                    class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700">
+                                    Sign out
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <aside class="fixed inset-y-0 hello left-0 bg-white shadow-md max-h-screen w-60">
+        <div class="flex flex-col justify-between h-full">
+            <div class="flex-grow">
+                <div class="px-4 py-6 text-center border-b">
+                    <h1 class="text-xl font-bold hello-5 leading-none"><span class="hello-3">Task Manager</span> App
+                    </h1>
+                </div>
+                <div class="p-4">
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#"
+                                class="flex items-center hello-4 rounded-xl font-bold text-sm text-yellow-900 py-3 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-lg mr-4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                </svg>Account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="flex items-center hello-4 rounded-xl font-bold text-sm text-yellow-900 py-3 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-lg mr-4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z" />
+                                </svg>Payments
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hello-4 rounded-xl font-bold text-sm text-gray-900 py-3 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-lg mr-4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z" />
+                                </svg>Cards
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hello-4 rounded-xl font-bold text-sm text-gray-900 py-3 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-lg mr-4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                </svg>Transactions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hello-4 rounded-xl font-bold text-sm text-gray-900 py-3 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="text-lg mr-4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                </svg>Help Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex hello-4 rounded-xl font-bold text-sm text-gray-900 py-3 px-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-lg mr-4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5 4h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1zm0 2h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1z" />
+                                </svg>Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-4">
+                <a href="#" class="flex hello-4 rounded-xl font-bold text-sm text-gray-900 py-3 px-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="text-lg mr-4" viewBox="0 0 16 16">
+                        <path
+                            d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>Logout
+                </a>
+            </div>
+        </div>
+    </aside>
+
+
+
+
+    <main class="ml-60 hello-1 max-h-screen overflow-auto">
+        <div class="px-6 py-8">
+
+            <hr class="my-15">
+
+            <div class="grid grid-cols-2 gap-x-20 hello-2">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Status</h2>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="col-span-2 hello-7 rounded-2xl">
+                            <div class="p-4 bg-green-100 rounded-xl">
+                                <div class="font-bold text-xl text-gray-800 leading-none mb-4">Your Account
+                                    <br>Balance
+                                </div>
+                                <div class="mt-5">
+                                    <button type="button"
+                                        class="hello-8 inline-flex items-center justify-center py-2 px-3 rounded-xl bg-white text-gray-800 hover:text-green-500 text-sm font-semibold transition">
+                                        Check balance
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 text-gray-800 hello-10">
+                            <div class="font-bold text-xl leading-none">Your daily plan</div>
+                            <div class="mt-2">5 of 8 completed</div>
+                        </div>
+                        <div
+                            class="p-4 flex hello-9 rounded-xl cursor-pointer items-center text-gray-800 justify-between">
+                            <div class="">
+                                <div class="font-bold text-xl leading-none">Send money</div>
+                                <div class="mt-2 text-xs">Click to send money</div>
+                            </div>
+                            <div class="">
+                                <i class="fa-solid fa-paper-plane text-2xl cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="p-4 flex hello-9 rounded-xl cursor-pointer items-center text-gray-800 justify-between">
+                            <div class="">
+                                <div class="font-bold text-xl leading-none">Request money</div>
+                                <div class="mt-2 text-xs">Clixk to Request money</div>
+                            </div>
+                            <div class="">
+                                <i class="fa-solid fa-plus text-2xl cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Your tasks today</h2>
+
+                    <div class="space-y-4">
+                        <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
+                            <div class="flex justify-between">
+                                <div class="text-gray-400 text-xs">Number 10</div>
+                                <div class="text-gray-400 text-xs">4h</div>
+                            </div>
+                            <a href="javascript:void(0)" class="font-bold hover:text-yellow-800 hover:underline">Today
+                                Transactions
+                            </a>
+                            <div class="text-sm text-gray-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-gray-800 inline align-middle mr-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>Today
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
+                            <div class="flex justify-between">
+                                <div class="text-gray-400 text-xs">Grace Aroma</div>
+                                <div class="text-gray-400 text-xs">7d</div>
+                            </div>
+                            <a href="javascript:void(0)" class="font-bold hover:text-yellow-800 hover:underline">New
+                                campaign
+                                review</a>
+                            <div class="text-sm text-gray-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    class="text-gray-800 inline align-middle mr-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>New feedback
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white border rounded-xl text-gray-800 space-y-2">
+                            <div class="flex justify-between">
+                                <div class="text-gray-400 text-xs">Petz App</div>
+                                <div class="text-gray-400 text-xs">2h</div>
+                            </div>
+                            <a href="javascript:void(0)"
+                                class="font-bold hover:text-yellow-800 hover:underline">Cross-platform and
+                                browser QA</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="hello-12">
+                        <div class="font-bold text-xl leading-none text-white p-4">
+                            <h4 class="font-bold text-xl leading-none text-white">Credit Card</h4>
+                            <div class="mt-5">
+                                <button type="button"
+                                    class="hello-8 inline-flex items-center justify-center py-2 px-3 rounded-xl bg-white text-gray-800 hover:text-green-500 text-sm font-semibold transition">
+                                    Order Card
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hello-12">
+                        <div class="font-bold text-xl leading-none text-white p-4">
+                            <h4 class="font-bold text-xl leading-none text-white">Debit Card</h4>
+                            <div class="mt-5">
+                                <button type="button"
+                                    class="hello-8 inline-flex items-center justify-center py-2 px-3 rounded-xl bg-white text-gray-800 hover:text-green-500 text-sm font-semibold transition">
+                                    Order Card
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
